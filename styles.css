@@ -1,0 +1,72 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+.header {
+    text-align: center;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+.numbers {
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    width: 63vmin;
+    gap: 5px;
+
+}
+
+.calculator {
+    display: flex;
+    width: 83vmin;
+    padding: 10px;
+    padding: 10px;
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+
+.operations {
+    width: 20vmin;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+button {
+    width: 20vmin;
+    height: 15vmin;
+    padding: 0px;
+    margin: 0px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.display {
+    width: 61vmin;
+    height: 15vmin;
+    background-color:antiquewhite;
+    border: 1px solid black;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.numbers > button {
+    background-color:burlywood;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./index.js" defer></script>
+</head>
+<body>
+    <h1 class="header">
+        Calculator
+    </h1>
+    <div class="calculator">
+        <div class="numbers">
+            <div class="display">
+            </div>
+            <button onclick="numInput(7)">7</button>
+            <button onclick="numInput(8)">8</button>
+            <button onclick="numInput(9)">9</button>
+            <button onclick="numInput(4)">4</button>
+            <button onclick="numInput(5)">5</button>
+            <button onclick="numInput(6)">6</button>
+            <button onclick="numInput(1)">1</button>
+            <button onclick="numInput(2)">2</button>
+            <button onclick="numInput(3)">3</button>
+            <button onclick="numInput(0)">0</button>
+            <button>.</button>
+            <button onclick="fullCalculation()">=</button>
+        </div>
+        <div class="operations">
+            <button onclick="clearDisplay()">AC</button>
+            <button onclick="operationInput(`/`)">/</button>
+            <button onclick="operationInput(`*`)">*</button>
+            <button onclick="operationInput(`-`)">-</button>
+            <button onclick="operationInput(`+`)">+</button>
+        </div>
+    </div>
+</body>
+</html>
