@@ -33,16 +33,22 @@ function fullCalculation(){
         let n1 = inp[0].val;
         let op;
         let n2;
-        for(let i = 1; i < inp.length; i++){
-            if (i % 2 == 0){
-                n2 = inp[i].val;  
-                n1 = calculate(n1, op, n2) ;
-            } else {
-                op = inp[i].val;
+        calcLoop:
+            for(let i = 1; i < inp.length; i++){
+                if (i % 2 == 0){
+                    n2 = inp[i].val; 
+                    if (op == "/" && n2 == 0){
+                        alert("stop that.");
+                        break calcLoop;
+                    } else{
+                        n1 = calculate(n1, op, n2);
+                    }
+                } else {
+                    op = inp[i].val;
+                }
             }
-        }
         inp = [];
-        inp.push(makeButton(n1));
+        inp.push(makeButton(n1, "number"));
     }
     updateDisplay();
 }
